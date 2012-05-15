@@ -37,6 +37,7 @@ void Encrypt::encryptStr(void)
     for(i=0;i<len;i++)
         str[i]=str[i]+30;
     str[i]='\0';
+    cout<< "String Encrypted Successfully"<<endl;
 }
 
 void Encrypt::decryptStr(void)
@@ -45,5 +46,6 @@ void Encrypt::decryptStr(void)
     for(i=0;i<len;i++)
         str[i]=str[i]-30;
     str[i]='\0';
+    cout<< "String Decrypted Successfully"<<endl;
 }
 #endif // CLASS_H_INCLUDED
