@@ -13,7 +13,7 @@ int main()
     cout << "3) Decrypt String" << endl;
     cout << "4) Display String" << endl;
     cout << "5) Exit" << endl;
-    cout<< "Enter yotu choice: ";
+    cout<< "Enter your choice: ";
 
     cin>>ch;
     cout<<endl;
@@ -23,10 +23,10 @@ int main()
         test.accept();
         break;
         case 2:
-        test.encryptStr();
+        test.init_encrypt();
         break;
         case 3:
-        test.decryptStr();
+        test.init_decrypt();
         break;
         case 4:
         test.display();

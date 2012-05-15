@@ -11,8 +11,11 @@ class Encrypt
 	char str[SIZE];
 	unsigned len;
 public:
+    void init_encrypt(void);
+    void init_decrypt(void);
 	void display (void);
-	void accept (void);
+void accept (void);
+private:
 	void encryptStr (void);
 	void decryptStr (void);
 };
@@ -47,5 +50,15 @@ void Encrypt::decryptStr(void)
         str[i]=str[i]-30;
     str[i]='\0';
     cout<< "String Decrypted Successfully"<<endl;
+}
+
+void Encrypt::init_encrypt(void)
+{
+    encryptStr();
+}
+
+void Encrypt::init_decrypt(void)
+{
+    decryptStr();
 }
 #endif // CLASS_H_INCLUDED
